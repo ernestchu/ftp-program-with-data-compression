@@ -1,0 +1,21 @@
+Author: Ernie Chu
+Date: 2021/4/6
+
+Usage:
+    Use `./Client` to start the program.
+    Use `./Client [IP] [port]` to connect to
+    a host on start
+
+    Use the arrow keys or `jk` to navigate.
+    Press enter to select.
+
+    Connect: connect to a host.
+        IP and port number will be required.
+    Send: send files to the host.
+        Support various compression encodings.
+        You need to establish a connection
+        before sending files.
+    Help: show this file.
+        
+Build:
+    `make` to build the program.
