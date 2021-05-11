@@ -30,7 +30,7 @@ Go to `exec` directory then you'll see the Client and Server program
 ### Server Usage
 
 - Use `./Server` to start the program, the program will prompt to ask for the port number.
-- Use `./Server` to specify the port number on start.
+- Use `./Server [port]` to specify the port number on start.
 
 ## Program design
 This program was written in C++. With the access to the UNIX socket library, I can also modularize the program with C++'s class encapsulation. Moreover, the class inheritance and polymorphism is perfect for designing a Huffman encoding service with fixed-length and variable-length code.
