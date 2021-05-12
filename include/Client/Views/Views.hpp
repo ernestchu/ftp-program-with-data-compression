@@ -5,7 +5,7 @@
  */
 
 #pragma once
-#include <Client/Views/Home.hpp>
-#include <Client/Views/Link.hpp>
-#include <Client/Views/Send.hpp>
-#include <Client/Views/Help.hpp>
+#include <Home.hpp>
+#include <Link.hpp>
+#include <Send.hpp>
+#include <Help.hpp>

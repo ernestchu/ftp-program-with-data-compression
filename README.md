@@ -2,6 +2,11 @@
 
 ![screenshot](./assets/images/screenshot.png)
 
+## Dependencies
+
+- ncurses
+- CMake
+
 ## Build
 Use CMake to build both the client and server program
 

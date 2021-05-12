@@ -4,7 +4,7 @@
  * Description: The Help view implementation.
  */
 
-#include <Client/Views/Help.hpp>
+#include <Help.hpp>
 
 view::Help::Help(
     const std::size_t& H,

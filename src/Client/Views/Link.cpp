@@ -4,7 +4,7 @@
  * Description: The Link view implementation.
  */
 
-#include <Client/Views/Link.hpp>
+#include <Link.hpp>
 
 view::Link::Link(
     const std::size_t& H,

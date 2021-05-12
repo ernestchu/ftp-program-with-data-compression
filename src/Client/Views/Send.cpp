@@ -4,7 +4,7 @@
  * Description: The Send view implementation.
  */
 
-#include <Client/Views/Send.hpp>
+#include <Send.hpp>
 
 view::Send::Send(
     const std::size_t& H,

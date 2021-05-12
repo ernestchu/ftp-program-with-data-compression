@@ -4,7 +4,7 @@
  * Description: The Home view implementation.
  */
 
-#include <Client/Views/Home.hpp>
+#include <Home.hpp>
 
 view::Home::Home(
     const std::size_t& H,
