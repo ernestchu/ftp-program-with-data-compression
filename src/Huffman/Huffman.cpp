@@ -118,7 +118,7 @@ std::string huf::HuffmanFix::decode(const std::string& fname, const int pad) {
 /* specialization needed for priority queue */
 template<>
 struct std::greater<std::shared_ptr<huf::Node>> {
-    const bool operator()(
+    bool operator()(
         const std::shared_ptr<huf::Node>& lhs,
         const std::shared_ptr<huf::Node>& rhs
     ) const {
