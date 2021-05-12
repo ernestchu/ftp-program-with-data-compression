@@ -15,7 +15,7 @@
 #include <string>
 #include <cerrno>
 #include <filesystem> /* filename */
-#include <Huffman/Huffman.hpp>
+#include <Huffman.hpp>
 
 namespace srvc {
 

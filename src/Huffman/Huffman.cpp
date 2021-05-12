@@ -4,7 +4,7 @@
  * Description: Huffman coding implementation.
  */
 
-#include <Huffman/Huffman.hpp>
+#include <Huffman.hpp>
 
 /******************** Base Class Huffman ********************/
 

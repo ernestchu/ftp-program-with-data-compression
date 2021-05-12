@@ -4,8 +4,8 @@
  * Description: The main program for the Client app.
  */
 
-#include <Client/Views/Views.hpp>
-#include <Client/Services.hpp>
+#include <Views.hpp>
+#include <Services.hpp>
 
 const std::size_t HEIGHT = 25;
 const std::size_t WIDTH = 60;

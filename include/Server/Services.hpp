@@ -18,7 +18,7 @@
 #include <ctime>
 #include <string>
 #include <sstream>
-#include <Huffman/Huffman.hpp>
+#include <Huffman.hpp>
 
 class Services {
 public:
