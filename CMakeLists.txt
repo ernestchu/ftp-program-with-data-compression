@@ -8,13 +8,16 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
 
+project(hw2 LANGUAGES CXX)
+
 set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 
 # set(CMAKE_BUILD_TYPE Debug)              # defaults to -g
 set(CMAKE_BUILD_TYPE Release)            # defaults to -O3 -DNDEBUG
 # set(CMAKE_BUILD_TYPE RelWithDebInfo)     # defaults to -O2 -g
 
-project(hw2 LANGUAGES CXX)
+# for ale
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_subdirectory(src)
 add_subdirectory(apps)
