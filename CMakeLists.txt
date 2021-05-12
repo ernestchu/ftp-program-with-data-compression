@@ -22,4 +22,18 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_subdirectory(src)
 add_subdirectory(apps)
 
-configure_file(src/Client/Views/HelpMsg.txt exec/HelpMsg.txt)
+# neeede by the Server to process files
+add_custom_target(
+    MakeDir
+    ALL
+    COMMAND ${CMAKE_COMMAND} -E make_directory exec/Data exec/HuffmanCache
+    COMMENT "Making Data and HuffmanCache directories needed by the Server"
+)
+
+# needed by the Client's help view
+add_custom_target(
+    HelpMsg
+    ALL
+    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/src/Client/Views/HelpMsg.txt ${CMAKE_BINARY_DIR}/exec/HelpMsg.txt
+    COMMENT "Copying HelpMsg.txt needed by the Client"
+)
