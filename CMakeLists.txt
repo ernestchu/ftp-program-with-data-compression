@@ -9,8 +9,10 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra")
-set(CMAKE_CXX_FLAGS_DEBUG "-g")
-set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+
+# set(CMAKE_BUILD_TYPE Debug)              # defaults to -g
+set(CMAKE_BUILD_TYPE Release)            # defaults to -O3 -DNDEBUG
+# set(CMAKE_BUILD_TYPE RelWithDebInfo)     # defaults to -O2 -g
 
 project(hw2 LANGUAGES CXX)
 
