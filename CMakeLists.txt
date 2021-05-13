@@ -8,7 +8,7 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
 
-project(hw2 LANGUAGES CXX)
+project(ftp-program-with-data-compression LANGUAGES CXX)
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 
