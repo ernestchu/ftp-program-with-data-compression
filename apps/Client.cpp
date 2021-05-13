@@ -11,14 +11,14 @@ const std::size_t HEIGHT = 25;
 const std::size_t WIDTH = 60;
 const std::vector<std::string> OPT = { 
     "Link",
-	"Send",
+    "Send",
     "Help",
-	"Exit",
+    "Exit",
 };
 
 int main(int argc, char** argv) {
     /* start ncurses */
-	WINDOW *win = initscr();
+    WINDOW *win = initscr();
     refresh();
 
     /* Views */
@@ -35,6 +35,7 @@ int main(int argc, char** argv) {
     if ((argc!=1) && (argc!=3)) {
         std::cout << "Invalid argument.\n";
         endwin();
+        delwin(win);
         exit(1);
     }
     if (argc == 3) {
