@@ -87,7 +87,8 @@ int Services::accept() {
       
 bool Services::recv(const int clifd) {
     auto recvFile = [clifd, this] (const std::string fname) -> unsigned int {
-        unsigned int n, nTotal = 0;
+        int n;
+        unsigned int nTotal = 0;
         std::ofstream ofs(fname, std::ofstream::binary);
         if (!ofs) {
             perror(fname.c_str());
@@ -120,7 +121,7 @@ bool Services::recv(const int clifd) {
         return nTotal;
     };
 
-    unsigned int n;
+    int n;
     /* read file name */
     int fnameSize;
     if ((n = read(clifd, (void*)&fnameSize, sizeof(fnameSize))) < 0) {
