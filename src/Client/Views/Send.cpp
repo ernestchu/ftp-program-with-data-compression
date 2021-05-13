@@ -21,7 +21,7 @@ view::Send::Send(
     );
 }
 view::Send::~Send() {
-    free(win);
+    delwin(win);
 }
 void view::Send::send() {
     clear();

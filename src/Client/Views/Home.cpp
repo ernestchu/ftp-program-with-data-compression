@@ -21,7 +21,7 @@ view::Home::Home(
     );
 }
 view::Home::~Home() {
-    free(win);
+    delwin(win);
 }
 int view::Home::menu() {
     wclear(win);

@@ -21,7 +21,7 @@ view::Link::Link(
     );
 }
 view::Link::~Link() {
-    free(win);
+    delwin(win);
 }
 view::Addr view::Link::link() {
     clear();

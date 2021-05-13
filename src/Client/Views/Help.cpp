@@ -21,7 +21,7 @@ view::Help::Help(
     );
 }
 view::Help::~Help() {
-    free(win);
+    delwin(win);
 }
 void view::Help::show() {
     clear();

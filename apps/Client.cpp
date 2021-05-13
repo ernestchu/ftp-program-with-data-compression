@@ -18,7 +18,7 @@ const std::vector<std::string> OPT = {
 
 int main(int argc, char** argv) {
     /* start ncurses */
-	initscr();
+	WINDOW *win = initscr();
     refresh();
 
     /* Views */
@@ -84,5 +84,6 @@ int main(int argc, char** argv) {
         }
     }
     endwin();
+    delwin(win);
     return 0;
 }
