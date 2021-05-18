@@ -12,9 +12,9 @@ project(ftp-program-with-data-compression LANGUAGES CXX)
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 
-# set(CMAKE_BUILD_TYPE Debug)              # defaults to -g
-set(CMAKE_BUILD_TYPE Release)            # defaults to -O3 -DNDEBUG
-# set(CMAKE_BUILD_TYPE RelWithDebInfo)     # defaults to -O2 -g
+# set(CMAKE_BUILD_TYPE Debug   CACHE STRING "-g"           FORCE)
+set(CMAKE_BUILD_TYPE Release CACHE STRING "-O3 -DNDEBUG" FORCE)
+# set(CMAKE_BUILD_TYPE RelWithDebInfo CACHE STRING "-O2 -g" FORCE)
 
 # for ale
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
